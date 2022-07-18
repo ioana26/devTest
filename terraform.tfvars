@@ -1,2 +1,2 @@
-project_id = "terraform-learning-293205"
+project_id = "my-devops-project-355909"
 region     = "europe-west2"
