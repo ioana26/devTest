@@ -12,3 +12,8 @@ variable "zone" {
   type    = string
   default = "europe-west2-a"
 }
+
+variable "GOOGLE_CREDENTIALS" {
+  type  = string
+  description = "This is awesome key"
+}
