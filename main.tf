@@ -5,7 +5,7 @@ terraform {
       version = ">= 3.29"
     }
   }
-  cloud {
+  backend "remote" {
     organization = "iavirvarei"
     workspaces {
       name = "devTest2"
