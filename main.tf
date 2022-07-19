@@ -14,7 +14,7 @@ terraform {
 }
 
 resource "google_service_account" "default" {
-  account_id   = "compute_engine_java"
+  account_id   = "compute-enginejava"
   display_name = "Compute Engine Service Account"
 }
 
