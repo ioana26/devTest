@@ -13,10 +13,6 @@ terraform {
   }
 }
 
-resource "google_service_account" "default" {
-  account_id   = "compute-enginejava"
-  display_name = "Compute Engine Service Account"
-}
 
 resource "google_compute_instance" "default" {
   name         = "java-application"
@@ -46,7 +42,7 @@ resource "google_compute_instance" "default" {
 
   service_account {
     # Google recommends custom service accounts that have cloud-platform scope and permissions granted via IAM Roles.
-    email  = google_service_account.default.email
+    email  = "devops-service-account@my-devops-project-355909.iam.gserviceaccount.com"
     scopes = ["cloud-platform"]
   }
 }
