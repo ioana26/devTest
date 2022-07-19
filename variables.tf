@@ -14,6 +14,6 @@ variable "zone" {
 }
 
 variable "GOOGLE_CREDENTIALS" {
-  type  = string
+  type        = string
   description = "This is awesome key"
 }
