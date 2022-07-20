@@ -33,7 +33,7 @@ resource "google_compute_instance" "default" {
     }
   }
 
-  metadata_startup_script = "echo hi > /test.txt; apt install git; apt install default-jdk"
+  metadata_startup_script = "echo 'Hello World'; apt install git; apt install default-jdk"
 
   service_account {
     # Google recommends custom service accounts that have cloud-platform scope and permissions granted via IAM Roles.
